@@ -1,0 +1,11 @@
+id = "todo-tag-highlighter"
+name = "TODO Tag Highlighter"
+version = "0.3.3"
+schema_version = 1
+authors = ["you"]
+description = "Highlights only TODO/FIXME/NOTE/WARN labels with configurable background colors while keeping the rest of each comment unchanged."
+repository = "https://github.com/YOUR_GITHUB_ID/todo-tag-highlighter"
+
+[grammars.comment]
+repository = "https://github.com/thedadams/tree-sitter-comment"
+rev = "d6c715fa37c6086030875ae20adaec399441a45c"

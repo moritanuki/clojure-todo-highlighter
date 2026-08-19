@@ -1,0 +1,9 @@
+{
+  "global_lsp_settings": {
+    "semantic_token_rules": [
+      {
+        "token_type": "comment"
+      }
+    ]
+  }
+}

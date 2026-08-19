@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">TODO Tag Highlighter Catppuccin Frappé demo</title>
+  <desc id="desc">Clojure, TypeScript, Python and Rust comments with only TODO-like labels receiving bright Catppuccin Frappé Text and 12% accent backgrounds.</desc>
+
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="24" flood-color="#181926" flood-opacity="0.48"/>
+    </filter>
+    <linearGradient id="page" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#303446"/>
+      <stop offset="1" stop-color="#292c3c"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#page)"/>
+  <circle cx="1162" cy="26" r="250" fill="#ca9ee6" opacity="0.08"/>
+  <circle cx="54" cy="632" r="230" fill="#81c8be" opacity="0.05"/>
+
+  <g font-family="Inter, system-ui, sans-serif">
+    <text x="90" y="92" fill="#c6d0f5" font-size="36" font-weight="760">TODO Tag Highlighter</text>
+    <text x="90" y="126" fill="#949cbb" font-size="17">Catppuccin Frappé - No Italics · bright tag text · muted comment body</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="90" y="166" width="1100" height="476" rx="22" fill="#303446" stroke="#414559" stroke-width="2"/>
+    <path d="M112 166h1056a22 22 0 0 1 22 22v44H90v-44a22 22 0 0 1 22-22Z" fill="#232634"/>
+    <circle cx="126" cy="199" r="7" fill="#e78284"/>
+    <circle cx="150" cy="199" r="7" fill="#e5c890"/>
+    <circle cx="174" cy="199" r="7" fill="#a6d189"/>
+    <text x="214" y="205" fill="#949cbb" font-family="Inter, system-ui, sans-serif" font-size="15">demo.clj · major languages</text>
+  </g>
+
+  <!-- language chips -->
+  <g font-family="Inter, system-ui, sans-serif" font-size="14">
+    <rect x="112" y="258" width="88" height="34" rx="17" fill="#414559"/>
+    <text x="156" y="280" text-anchor="middle" fill="#b5bfe2">Clojure</text>
+    <rect x="112" y="346" width="88" height="34" rx="17" fill="#414559"/>
+    <text x="156" y="368" text-anchor="middle" fill="#b5bfe2">TypeScript</text>
+    <rect x="112" y="434" width="88" height="34" rx="17" fill="#414559"/>
+    <text x="156" y="456" text-anchor="middle" fill="#b5bfe2">Python</text>
+    <rect x="112" y="522" width="88" height="34" rx="17" fill="#414559"/>
+    <text x="156" y="544" text-anchor="middle" fill="#b5bfe2">Rust</text>
+  </g>
+
+  <!-- code rows: label text is Frappé Text; marker, colon and body stay normal comment -->
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="23" fill="#949cbb">
+    <text x="232" y="282">;; </text>
+    <rect x="274" y="254" width="76" height="37" rx="7" fill="#eebebe" opacity="0.12"/>
+    <text x="284" y="282" fill="#c6d0f5">TODO</text>
+    <text x="352" y="282">: batch ClinVar annotation requests</text>
+
+    <text x="232" y="370">// </text>
+    <rect x="274" y="342" width="207" height="37" rx="7" fill="#e78284" opacity="0.12"/>
+    <text x="284" y="370" fill="#c6d0f5">FIXME(parser)</text>
+    <text x="483" y="370">: normalize p.? to nil</text>
+
+    <text x="232" y="458"># </text>
+    <rect x="260" y="430" width="76" height="37" rx="7" fill="#81c8be" opacity="0.12"/>
+    <text x="270" y="458" fill="#c6d0f5">NOTE</text>
+    <text x="338" y="458">: keep transcript versions in source</text>
+
+    <text x="232" y="546">// </text>
+    <rect x="274" y="518" width="146" height="37" rx="7" fill="#e5c890" opacity="0.12"/>
+    <text x="284" y="546" fill="#c6d0f5">SECURITY</text>
+    <text x="422" y="546">: never log patient identifiers</text>
+  </g>
+
+  <line x1="232" y1="584" x2="1154" y2="584" stroke="#414559"/>
+  <g font-family="Inter, system-ui, sans-serif" font-size="14">
+    <rect x="232" y="605" width="16" height="16" rx="4" fill="#eebebe" opacity="0.12"/>
+    <text x="258" y="618" fill="#b5bfe2">bright text + background only on the label</text>
+    <text x="650" y="618" fill="#949cbb">marker, colon and body keep the ordinary comment style</text>
+  </g>
+</svg>

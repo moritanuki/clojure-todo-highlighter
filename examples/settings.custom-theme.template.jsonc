@@ -1,0 +1,26 @@
+{
+  "theme_overrides": {
+    "YOUR EXACT THEME NAME": {
+      "syntax": {
+        // Replace `color` with the desired highlighted-tag foreground.
+        // Tag text uses Frappé Text (#c6d0f5); backgrounds use Frappé hues at 12% alpha.
+        "comment.todo_tag_highlighter.task": {
+          "color": "#c6d0f5ff",
+          "background_color": "#eebebe1f"
+        },
+        "comment.todo_tag_highlighter.info": {
+          "color": "#c6d0f5ff",
+          "background_color": "#81c8be1f"
+        },
+        "comment.todo_tag_highlighter.fix": {
+          "color": "#c6d0f5ff",
+          "background_color": "#e782841f"
+        },
+        "comment.todo_tag_highlighter.warning": {
+          "color": "#c6d0f5ff",
+          "background_color": "#e5c8901f"
+        }
+      }
+    }
+  }
+}

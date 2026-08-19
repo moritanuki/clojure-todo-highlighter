@@ -1,0 +1,124 @@
+{
+  // `theme_overrides` is keyed by the EXACT active theme name.
+  // Catppuccin Frappé is a dark theme, so the accent backgrounds use 12% alpha.
+  // Tag text uses Frappé Text (#c6d0f5); only the remaining comment text stays muted.
+  "theme_overrides": {
+    "Catppuccin Frappé - No Italics": {
+      "syntax": {
+        // Tag text uses Frappé Text, while the rest of the comment keeps #949cbb.
+        // Only the TODO-like tag receives this foreground plus a translucent background.
+        "comment.todo_tag_highlighter.task": {
+          "color": "#c6d0f5ff",
+          "background_color": "#eebebe1f",
+          "font_style": null,
+          "font_weight": null
+        },
+        "comment.todo_tag_highlighter.info": {
+          "color": "#c6d0f5ff",
+          "background_color": "#81c8be1f",
+          "font_style": null,
+          "font_weight": null
+        },
+        "comment.todo_tag_highlighter.fix": {
+          "color": "#c6d0f5ff",
+          "background_color": "#e782841f",
+          "font_style": null,
+          "font_weight": null
+        },
+        "comment.todo_tag_highlighter.warning": {
+          "color": "#c6d0f5ff",
+          "background_color": "#e5c8901f",
+          "font_style": null,
+          "font_weight": null
+        }
+      }
+    },
+    "Catppuccin Frappé": {
+      "syntax": {
+        // Same bright tag foreground for the italic Catppuccin Frappé variant.
+        "comment.todo_tag_highlighter.task": {
+          "color": "#c6d0f5ff",
+          "background_color": "#eebebe1f",
+          "font_style": "italic",
+          "font_weight": null
+        },
+        "comment.todo_tag_highlighter.info": {
+          "color": "#c6d0f5ff",
+          "background_color": "#81c8be1f",
+          "font_style": "italic",
+          "font_weight": null
+        },
+        "comment.todo_tag_highlighter.fix": {
+          "color": "#c6d0f5ff",
+          "background_color": "#e782841f",
+          "font_style": "italic",
+          "font_weight": null
+        },
+        "comment.todo_tag_highlighter.warning": {
+          "color": "#c6d0f5ff",
+          "background_color": "#e5c8901f",
+          "font_style": "italic",
+          "font_weight": null
+        }
+      }
+    },
+    "One Dark": {
+      "syntax": {
+        // Keep One Dark's normal comment foreground; use the same dark Frappé tints.
+        "comment.todo_tag_highlighter.task": {
+          "color": "#5d636fff",
+          "background_color": "#eebebe1f",
+          "font_style": null,
+          "font_weight": null
+        },
+        "comment.todo_tag_highlighter.info": {
+          "color": "#5d636fff",
+          "background_color": "#81c8be1f",
+          "font_style": null,
+          "font_weight": null
+        },
+        "comment.todo_tag_highlighter.fix": {
+          "color": "#5d636fff",
+          "background_color": "#e782841f",
+          "font_style": null,
+          "font_weight": null
+        },
+        "comment.todo_tag_highlighter.warning": {
+          "color": "#5d636fff",
+          "background_color": "#e5c8901f",
+          "font_style": null,
+          "font_weight": null
+        }
+      }
+    },
+    "One Light": {
+      "syntax": {
+        // Opaque Frappé-tinted dark backgrounds keep One Light's pale comment text readable.
+        "comment.todo_tag_highlighter.task": {
+          "color": "#a2a3a7ff",
+          "background_color": "#474555ff",
+          "font_style": null,
+          "font_weight": null
+        },
+        "comment.todo_tag_highlighter.info": {
+          "color": "#a2a3a7ff",
+          "background_color": "#3a4655ff",
+          "font_style": null,
+          "font_weight": null
+        },
+        "comment.todo_tag_highlighter.fix": {
+          "color": "#a2a3a7ff",
+          "background_color": "#463d4eff",
+          "font_style": null,
+          "font_weight": null
+        },
+        "comment.todo_tag_highlighter.warning": {
+          "color": "#a2a3a7ff",
+          "background_color": "#46464fff",
+          "font_style": null,
+          "font_weight": null
+        }
+      }
+    }
+  }
+}
